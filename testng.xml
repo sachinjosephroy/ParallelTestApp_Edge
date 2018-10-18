@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite thread-count="2" name="LoginTest" parallel="tests">  
+  <test thread-count="2" name="Win7 Browser Edge" parallel="tests">
+  	<parameters>
+	  	<parameter name="myBrowser" value="edge" />
+	  	<parameter name="OS" value="Win10" />
+	  	<parameter name="remoteURL" value="http://192.168.1.226:5567/wd/hub" />
+  	</parameters>
+	<classes>
+		<class name="com.paralleltestapp.qa.testcases.ParallelTest" />
+	</classes>
+  </test> <!-- ParallelTest1 Browser Edge -->
+</suite> <!-- LoginTest -->
